@@ -3363,8 +3363,9 @@ button.small,
       url("images/bg01.png");
     background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
       url("images/bg01.png");
-    height: 44px;
-    line-height: 44px;
+    height: 66px;
+    line-height: 28px;
+    padding-top: 0.3rem;
     box-shadow: 0 4px 0 0 #93e1de;
   }
 
@@ -3410,12 +3411,14 @@ button.small,
   #titleBar .toggle:before {
     content: "\f0c9";
     display: block;
-    height: 44px;
+    height: 41px;
     line-height: inherit;
     text-align: center;
-    width: 44px;
+    width: 47px;
+    font-size: 1rem;
     color: #fff;
     opacity: 0.5;
+    margin-top: 0.8rem;
   }
 
   #titleBar .toggle:active:before {
