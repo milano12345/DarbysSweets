@@ -3617,6 +3617,7 @@ button.small,
 
   .icon.major:before {
     font-size: 24px;
+    margin-left: 0.7rem;
   }
 
   /* Button */
