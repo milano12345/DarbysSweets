@@ -3365,7 +3365,7 @@ button.small,
       url("images/bg01.png");
     height: 44px;
     line-height: 44px;
-    box-shadow: 0 4px 0 0 #6890ca;
+    box-shadow: 0 4px 0 0 #93e1de;
   }
 
   #titleBar .title {
@@ -3373,8 +3373,9 @@ button.small,
     position: relative;
     font-weight: 600;
     text-align: center;
-    color: #fff;
     z-index: 1;
+    font-family: petit formal script;
+    color: #ffa69e;
   }
 
   #titleBar .title em {
