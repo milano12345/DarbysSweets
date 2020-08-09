@@ -3375,6 +3375,7 @@ button.small,
     font-weight: 600;
     text-align: center;
     z-index: 1;
+    font-size: 1.1rem;
     font-family: petit formal script;
     color: #ffa69e;
   }
