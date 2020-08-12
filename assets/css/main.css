@@ -2188,7 +2188,7 @@ label {
 
 .image.left img {
   display: block;
-  width: 85%;
+  width: 100%;
 }
 
 .image.fit {
@@ -2242,7 +2242,19 @@ label {
 .icon.solid:before {
   font-weight: 900;
 }
+@media screen and (min-width: 480px) and (max-width: 845px) {
+  .iconimg {
+    height: 3rem !important;
+    width: 4rem !important;
+  }
+}
 
+@media screen and (min-width: 1040px) {
+  .box.post2 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
@@ -2865,7 +2877,7 @@ button.small,
 /* Banner */
 
 #banner {
-  background-image: url("../../images/display.jpg");
+  background-image: url("../../images/cupcakedisplay.jpg");
   background-position: center center;
   background-size: cover;
   height: 28em;
@@ -3245,7 +3257,7 @@ button.small,
     position: absolute;
     margin: 0;
     left: 0;
-    top: 0.25em;
+    top: 0.6em;
   }
 
   .box.post .inner {
@@ -3586,7 +3598,7 @@ button.small,
   header.major p {
     top: 0;
     margin-top: 1.25em;
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
 
   /* Menu */
