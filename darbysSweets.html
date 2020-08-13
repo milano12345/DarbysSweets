@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Petit+Formal+Script&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="is-preload">
@@ -15,38 +19,29 @@
       <div id="header">
         <!-- Logo -->
         <h1>
-          <a href="index.html" id="logo">Arcana <em>by Pixelarity</em></a>
+          <a href="index.html" id="logo"><em>Welcome to </br></em>Darby's Sweets</a>
         </h1>
 
         <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
             <li>
-              <a href="#">Dropdown</a>
+              <a href="darbysSweets.html">Darby's Sweets</a>
               <ul>
-                <li><a href="#">Lorem dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam sed tempus</a></li>
-                <li>
-                  <a href="#">Submenu</a>
-                  <ul>
-                    <li><a href="#">Lorem dolor</a></li>
-                    <li><a href="#">Phasellus magna</a></li>
-                    <li><a href="#">Magna phasellus</a></li>
-                    <li><a href="#">Etiam nisl</a></li>
-                    <li><a href="#">Veroeros feugiat</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Veroeros feugiat</a></li>
+                <li><a href="darbysSweets.html">Cakes</a></li>
+                <li><a href="darbysSweets.html">Cupcakes</a></li>
+                <li><a href="darbysSweets.html">Cookies</a></li>
+                <li><a href="darbysSweets.html">Cake Pops</a></li>
+                <li><a href="darbysSweets.html">Cheesecake</a></li>
+                <li></li>
               </ul>
             </li>
-            <li class="current">
-              <a href="left-sidebar.html">Left Sidebar</a>
-            </li>
-            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="two-sidebar.html">Two Sidebar</a></li>
-            <li><a href="no-sidebar.html">No Sidebar</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="wedding.html">Weddings</a></li>
+            <li><a href="dogTreats.html">Dog Treats</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -60,30 +55,13 @@
                 <!-- Sidebar -->
 
                 <section>
-                  <h3>Ante sit Adipiscing</h3>
+                  <h3>Don't See A Flavor You Desire?</h3>
                   <p>
-                    Phasellus quam turpis, feugiat sit amet ornare in, hendrerit
-                    in lectus. Praesent semper mod quis eget mi. Etiam eu ante
-                    risus. Aliquam erat volutpat. Aliquam luctus et mattis
-                    lectus sit amet pulvinar. Nam turpis et nisi etiam.
+                    No problem! Additional flavors may be available upon request! Send me a message below! All flavors can be made 
+                    gluten free or vegan-friendly!
                   </p>
                   <footer>
-                    <a href="#" class="button">Continue Reading</a>
-                  </footer>
-                </section>
-
-                <section>
-                  <h3>Pretium Adipiscing</h3>
-                  <ul class="links">
-                    <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-                    <li><a href="#">Ornare in hendrerit in lectus</a></li>
-                    <li><a href="#">Semper mod quis eget mi dolore</a></li>
-                    <li><a href="#">Consequat etiam lorem phasellus</a></li>
-                    <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-                    <li><a href="#">Semper mod quisturpis nisi</a></li>
-                  </ul>
-                  <footer>
-                    <a href="#" class="button">More Random Links</a>
+                    <a href="#footer" class="button">Send Message</a>
                   </footer>
                 </section>
               </div>
@@ -94,50 +72,86 @@
 
                 <article>
                   <header>
-                    <h2>Left Sidebar</h2>
-                    <p>Natoque in sed morbi, commodo at cep aenean.</p>
+                    <h3>Our Sweets</h3>
+                    <div class="tab">
+                      <button class="tablinks" onclick="openCity(event, 'Cakes')">Cakes</button>
+                      <button class="tablinks" onclick="openCity(event, 'Cupcakes')">Cupcakes</button>
+                      <button class="tablinks" onclick="openCity(event, 'Cookies')">Cookies</button>
+                      <button class="tablinks" onclick="openCity(event, 'Cake Pops')">Cake Pops</button>
+                      <button class="tablinks" onclick="openCity(event, 'Cheesecake')">Cheesecake</button>
+                      <button class="tablinks" onclick="openCity(event, 'Dog Treats')">Dog Treats</button>
+                    </div>
+                    
+                    <!-- Tab content -->
+                    <div id="Cakes" class="tabcontent">
+                      <span onclick="this.parentElement.style.display='none'" style="cursor:pointer">x</span>
+                      <h3>Cakes</h3>
+                      <h4 style="margin-bottom: 2rem">Signature Cake Flavors</h4>
+                      <p>These are our cakes.</p>
+                    </div>
+                    <div id="Cupcakes" class="tabcontent">
+                      <span onclick="this.parentElement.style.display='none'" style="cursor:pointer">x</span>
+                      <h3>Cupcakes</h3>
+                      <h4 style="margin-bottom: 2rem">Signature Cupcake Flavors</h4>
+
+                        <p>Vanilla Delight- A rich buttery vanilla cupcake with creamy vanilla buttercream frosting</p>
+                        
+                        <p>Chocolate Delight- A chocolate cupcake with decadent chocolate buttercream frosting</p>
+                        
+                        <p>Killer Red- A traditional red velvet cupcake with a hint of cocoa along with sweet cream cheese frosting</p>
+                        
+                        <p>Raspberry Splash- A raspberry & strawberry cupcake with raspberry buttercream frosting</p>
+                        
+                        <p>Lovely Lemon- A rich buttery vanilla cupcake filled with lemon curd and lemon zest buttercream frosting</p>
+                        
+                        <p>Sweet & Salty- A chocolate cupcake filled with handmade salted caramel topped with a salted caramel frosting</p>
+                        <p>Coconut Lime-  A moist coconut cupcake with lime buttercream frosting rolled in toasted coconut flakes</p>
+                        
+                        <p>Peanut Butter Divine-  A chocolate cupcake filled with peanut butter and topped with a peanut buttercream frosting</p>
+                        
+                        <p>German Chocolate- A moist chocolate cupcake with chocolate buttercream topped with a walnut, pecan coconut garnish.</p>
+                        
+                        <p>Strawberry Dream- A strawberry  cupcake with filled with strawberry jam topped with strawberry buttercream</p>
+                        
+                        <p>Sweet Neapolitan- A vanilla and chocolate marbled cupcake with a sweet strawberry buttercream frosting</p>
+                        
+                        <p>Caramelicious- A rich buttery vanilla cupcake filled with handmade caramel topped with salted caramel buttercream and a caramel drizzle</p>
+                        
+                        <p>Crazy Carrot- A carrot cake cupcake with cream cheese frosting</p>
+                        
+                        <p>Butterscotch Heaven – A rich buttery vanilla cupcake with butterscotch ganache filling, topped with a butterscotch buttercream and drizzle</p>
+                        
+                        <p>Banana Love – A moist banana cupcake with sweet cream cheese frosting sprinkled with crushed hazelnuts</p>
+                    </div>
+                    <div id="Cookies" class="tabcontent">
+                      <span onclick="this.parentElement.style.display='none'" style="cursor:pointer">x</span>
+                      <h3>Cookies</h3>
+                      <h4 style="margin-bottom: 2rem">Signature Cookie Flavors</h4>
+                      <p>These are our cookies.</p>
+                    </div>
+                    <div id="Cake Pops" class="tabcontent">
+                      <span onclick="this.parentElement.style.display='none'" style="cursor:pointer">x</span>
+                      <h3>Cake Pops</h3>
+                      <h4 style="margin-bottom: 2rem">Signature Cake Pop Flavors</h4>
+                      <p>These are our cake pops.</p>
+                    </div>
+                    <div id="Cheesecake" class="tabcontent">
+                      <span onclick="this.parentElement.style.display='none'" style="cursor:pointer">x</span>
+                      <h3>Cheesecake</h3>
+                      <h4 style="margin-bottom: 2rem">Signature Cheesecake Flavors</h4>
+                      <p>These are our cheesecakes.</p>
+                    </div>
+                    <div id="Dog Treats" class="tabcontent">
+                      <span onclick="this.parentElement.style.display='none'" style="cursor:pointer">x</span>
+                      <h3>Dog Treats</h3>
+                      <h4 style="margin-bottom: 2rem">Signature Dog Treat Flavors</h4>
+                      <p>These are our dog treat flavors.</p>
+                    </div>
                   </header>
 
                   <span class="image featured"
                     ><img src="images/banner.jpg" alt=""
                   /></span>
-
-                  <p>
-                    Phasellus quam turpis, feugiat sit amet ornare in, hendrerit
-                    in lectus. Praesent semper mod quis eget mi. Etiam eu ante
-                    risus. Aliquam erat volutpat. Aliquam luctus et mattis
-                    lectus sit amet pulvinar. Nam turpis nisi consequat etiam
-                    lorem ipsum dolor sit amet nullam.
-                  </p>
-
-                  <h3>Ata Sed Cubilia Adipiscing</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas ac quam risus, at tempus justo. Sed dictum rutrum
-                    massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque
-                    lorem felis, ultricies a bibendum id, bibendum sit amet
-                    nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-                    vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi
-                    ut ante mattis orci convallis tempor. Etiam a lacus a lacus
-                    pharetra porttitor quis accumsan odio. Sed vel euismod nisi.
-                    Etiam convallis rhoncus dui quis euismod. Maecenas lorem
-                    tellus, congue et condimentum ac, ullamcorper non sapien.
-                    Donec sagittis massa et leo semper a scelerisque metus
-                    faucibus. Morbi congue mattis mi. Phasellus sed nisl vitae
-                    risus tristique volutpat. Cras rutrum commodo luctus.
-                  </p>
-
-                  <p>
-                    Phasellus odio risus, faucibus et viverra vitae, eleifend ac
-                    purus. Praesent mattis, enim quis hendrerit porttitor,
-                    sapien tortor viverra magna, sit amet rhoncus nisl lacus nec
-                    arcu. Suspendisse laoreet metus ut metus imperdiet interdum
-                    aliquam justo tincidunt. Mauris dolor urna, fringilla vel
-                    malesuada ac, dignissim eu mi. Praesent mollis massa ac
-                    nulla pretium pretium. Maecenas tortor mauris, consectetur
-                    pellentesque dapibus eget, tincidunt vitae arcu. Vestibulum
-                    purus augue, tincidunt sit amet iaculis id, porta eu purus.
-                  </p>
                 </article>
               </div>
             </div>
@@ -146,116 +160,71 @@
       </section>
 
       <!-- Footer -->
-      <div id="footer">
-        <div class="container">
-          <div class="row">
-            <section class="col-3 col-6-narrower col-12-mobilep">
-              <h3>Massa mi Lorem</h3>
-              <ul class="links">
-                <li><a href="#">Mattis et quis rutrum</a></li>
-                <li><a href="#">Suspendisse amet varius</a></li>
-                <li><a href="#">Sed et dapibus quis</a></li>
-                <li><a href="#">Rutrum accumsan dolor</a></li>
-                <li><a href="#">Mattis rutrum accumsan</a></li>
-                <li><a href="#">Suspendisse varius nibh</a></li>
-                <li><a href="#">Sed et dapibus mattis</a></li>
-              </ul>
-            </section>
-            <section class="col-3 col-6-narrower col-12-mobilep">
-              <h3>Nibh Donec id Augue</h3>
-              <ul class="links">
-                <li><a href="#">Duis neque nisi dapibus</a></li>
-                <li><a href="#">Sed et dapibus quis</a></li>
-                <li><a href="#">Rutrum accumsan sed</a></li>
-                <li><a href="#">Mattis et sed accumsan</a></li>
-                <li><a href="#">Duis neque nisi sed</a></li>
-                <li><a href="#">Sed et dapibus quis</a></li>
-                <li><a href="#">Rutrum amet varius</a></li>
-              </ul>
-            </section>
-            <section class="col-6 col-12-narrower">
-              <h3>Col At Augue</h3>
-              <form>
-                <div class="row gtr-50">
-                  <div class="col-6 col-12-mobilep">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div class="col-6 col-12-mobilep">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      rows="5"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <ul class="actions">
-                      <li>
-                        <input
-                          type="submit"
-                          class="button alt"
-                          value="Send Message"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            </section>
+      <section id="footer" style="text-align: center;">
+        <div class="inner">
+          <h2 id="major" class="major">Get in touch</h2>
+          <p>
+            Interested in a quote or have questions? Contact me below.
+          </p>
+          <form method="POST" action="">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"/>
+              </div>
+              <div class="field">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="replyTo" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input
+                  id="send"
+                  name="End of Message. Enjoy your day!"
+                  type="submit"
+                  value="Send Message"
+                />
+              </li>
+            </ul>
+		  </form>
+		  <div class="background footer">
+          <div class="icon solid fa-phone"></br>
+            <a href="tel:7206765681">(720) 676-5681</a>
           </div>
-        </div>
-
-        <!-- Icons -->
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
+          <div class="icon solid fa-envelope">
+            <br />
+            <a href="mailto:darbyssweets@gmail.com"
+              >darbyssweets@gmail.com</a
             >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
+          </div>
+          <div class="icon brands fa-google">
+            <br />
+            <a href="#">google.com/darbyssweets</a>
+          </div>
+          <br />
+          <div class="copyright">
+            <p>&copy; Darby's Sweets</p>
+          </div>
+          <div class="icon brands fa-linkedin">
+            Design:
+            <a href="http://linkedin.com/in/daniel-milano-90088b18a/"
+              >Daniel Milano</a
             >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-linkedin-in"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-google-plus-g"
-              ><span class="label">Google+</span></a
-            >
-          </li>
-        </ul>
-
-        <!-- Copyright -->
-        <div class="copyright">
-          <ul class="menu">
-            <li>&copy; Untitled. All rights reserved</li>
-          </ul>
-        </div>
-      </div>
+          </div>
+		</div>
+		</div>
+		</section>
+      </section>
     </div>
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>

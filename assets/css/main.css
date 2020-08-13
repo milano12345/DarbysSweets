@@ -2581,7 +2581,7 @@ button,
     url("images/bg01.png");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
     url("images/bg01.png");
-  background-color: #6890ca;
+  background-color: #93e1d3;
   border-radius: 5px;
   border: 0;
   color: #fff;
@@ -2749,7 +2749,7 @@ button.small,
   display: block;
   width: 100%;
   height: 0.75em;
-  background-color: #6890ca;
+  background-color: #93e1d3;
   background-image: url("images/bg01.png");
 }
 
@@ -3698,4 +3698,62 @@ button.small,
 
 .conatiner header {
   background: #93e1d8;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.button {
+  background-color: #93e1d3;
+}
+
+.icon {
+  color: #ddfff7;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid white;
+  background-color: #93e1d8;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-top: none;
 }
