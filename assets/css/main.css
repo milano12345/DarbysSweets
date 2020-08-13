@@ -3747,7 +3747,7 @@ button.small,
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #ffa69e;
 }
 
 /* Style the tab content */
